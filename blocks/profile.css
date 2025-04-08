@@ -40,12 +40,15 @@
 
 .profile__edit-btn {
   margin-top: auto;
-  margin-right: auto;
+  padding: 0;
+  display: flex;
   font-weight: 500;
+  color: #212121;
   background-color: transparent;
   border: none;
   opacity: 70%;
   line-height: 1;
+  cursor: pointer;
 }
 
 .profile__edit-btn:hover {
@@ -60,12 +63,17 @@
   margin-left: auto;
   font-weight: 500;
   background-color: #212121;
+  border: none;
   color: #fcf5e5;
   width: 149px;
   height: 52px;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .profile__add-btn:hover {
@@ -98,6 +106,7 @@
     margin: 0 0 12px;
     width: 80px;
     height: 80px;
+    object-fit: cover;
   }
 
   .profile__column {

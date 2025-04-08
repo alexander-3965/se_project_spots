@@ -30,3 +30,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 This website is being deployed to github pages
 [deployment link](https://alexander-3965.github.io/se_project_spots/)
+
+##### Video submission
+
+[Video submission](https://drive.google.com/file/d/1t_Vlm-sSbARKmyhuFUo10PwVUdpKk8Xd/view?usp=sharing)
