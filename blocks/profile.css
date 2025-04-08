@@ -40,23 +40,17 @@
 
 .profile__edit-btn {
   margin-top: auto;
-<<<<<<< HEAD
   padding: 0;
   display: flex;
   font-weight: 500;
   color: #212121;
-=======
   margin-right: auto;
   font-weight: 500;
->>>>>>> d09e6de11fa30be0a0b86200f9abf5d90827e44c
   background-color: transparent;
   border: none;
   opacity: 70%;
   line-height: 1;
-<<<<<<< HEAD
   cursor: pointer;
-=======
->>>>>>> d09e6de11fa30be0a0b86200f9abf5d90827e44c
 }
 
 .profile__edit-btn:hover {
@@ -71,25 +65,19 @@
   margin-left: auto;
   font-weight: 500;
   background-color: #212121;
-<<<<<<< HEAD
   border: none;
-=======
->>>>>>> d09e6de11fa30be0a0b86200f9abf5d90827e44c
   color: #fcf5e5;
   width: 149px;
   height: 52px;
   align-self: flex-end;
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   line-height: 1;
   cursor: pointer;
-=======
   border-radius: 8px;
   line-height: 1;
->>>>>>> d09e6de11fa30be0a0b86200f9abf5d90827e44c
 }
 
 .profile__add-btn:hover {
@@ -122,10 +110,7 @@
     margin: 0 0 12px;
     width: 80px;
     height: 80px;
-<<<<<<< HEAD
     object-fit: cover;
-=======
->>>>>>> d09e6de11fa30be0a0b86200f9abf5d90827e44c
   }
 
   .profile__column {
