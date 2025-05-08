@@ -20,6 +20,7 @@
 .profile__name {
   margin: 0;
   font-weight: 500;
+  font-size: 32px;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -30,7 +31,7 @@
 .profile__description {
   margin: 12px 0 0;
   font-weight: 500;
-  opacity: 70%;
+  color: rgba(33, 33, 33, 0.7);
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -124,6 +125,6 @@
   }
 
   .profile__edit-btn {
-    margin: 0;
+    margin-left: auto;
   }
 }
