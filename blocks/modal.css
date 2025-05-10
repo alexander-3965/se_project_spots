@@ -112,4 +112,20 @@
   .modal__save-btn {
     max-width: none;
   }
+
+  .modal__input {
+    font-size: 16px;
+  }
+
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
+  .modal__close-btn {
+    top: 7px;
+    right: 12px;
+  }
+  .modal__title {
+    font-size: 20px;
+  }
 }
