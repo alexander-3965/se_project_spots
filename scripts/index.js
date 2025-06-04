@@ -45,7 +45,6 @@ const profileDescription = document.querySelector(".profile__description");
 const cardTemplate = document.querySelector("#card-template").content;
 const cardsList = document.querySelector(".cards__list");
 const previewModal = document.querySelector("#preview-modal");
-const previewEl = previewModal.querySelector(".modal__preview");
 const previewImage = previewModal.querySelector(".modal__image");
 const previewCaption = previewModal.querySelector(".modal__caption");
 const previewCloseBtn = previewModal.querySelector(".modal__close-btn_image");
