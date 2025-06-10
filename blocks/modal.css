@@ -85,8 +85,8 @@
   border-radius: 8px;
 }
 
-.modal__input_type_error{
-  border: 1px solid rgba(255,0,0,0.6);
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
 }
 
 .modal__input:hover {
@@ -114,7 +114,7 @@
   opacity: 80%;
 }
 
-.modal__save-btn_inactive{
+.modal__save-btn_inactive {
   opacity: 50%;
 }
 
@@ -134,12 +134,6 @@
 .modal__input::placeholder {
   color: #2121214d;
   font-weight: 500;
-}
-
-
-
-.modal__input::invalid {
-  border: 1px solid red;
 }
 
 .modal__image {
