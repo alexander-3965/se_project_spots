@@ -67,6 +67,13 @@
   opacity: 40%;
 }
 
+.modal__error {
+  color: #ff0000;
+  opacity: 70%;
+  margin-top: 8px;
+  display: block;
+}
+
 .modal__input {
   width: 100%;
   margin: 8px 0 0;
@@ -76,6 +83,10 @@
   padding: 16px 12px;
   box-sizing: border-box;
   border-radius: 8px;
+}
+
+.modal__input_type_error{
+  border: 1px solid rgba(255,0,0,0.6);
 }
 
 .modal__input:hover {
@@ -103,6 +114,10 @@
   opacity: 80%;
 }
 
+.modal__save-btn_inactive{
+  opacity: 50%;
+}
+
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -119,6 +134,12 @@
 .modal__input::placeholder {
   color: #2121214d;
   font-weight: 500;
+}
+
+
+
+.modal__input::invalid {
+  border: 1px solid red;
 }
 
 .modal__image {

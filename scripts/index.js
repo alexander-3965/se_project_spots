@@ -36,6 +36,7 @@ const descriptionInput = editModal.querySelector("#profile-description-input");
 const editForm = editModal.querySelector(".modal__form");
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
+const newSubmitBtn = newPostModal.querySelector(".modal__save-btn");
 const newCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostFormEl = newPostModal.querySelector(".modal__form");
 const newPostLink = newPostModal.querySelector("#image-link-input");
@@ -48,6 +49,7 @@ const previewModal = document.querySelector("#preview-modal");
 const previewImage = previewModal.querySelector(".modal__image");
 const previewCaption = previewModal.querySelector(".modal__caption");
 const previewCloseBtn = previewModal.querySelector(".modal__close-btn_image");
+
 
 function getCardElement(data) {
   const cardElement = cardTemplate.querySelector(".card").cloneNode(true);
@@ -77,6 +79,18 @@ previewCloseBtn.addEventListener("click", function () {
   closeModal(previewModal);
 });
 
+const modals = document.querySelectorAll("modal__form");
+modals.forEach((form) => {
+  form.addEventListener("click", function(evt) {
+    if (evt.target.classList.contains('.modal__container')){
+      console.log("modal should close");
+    }
+    else {};
+  })
+});
+
+
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
@@ -88,6 +102,7 @@ function closeModal(modal) {
 editProfileBtn.addEventListener("click", function () {
   nameInput.value = profileName.textContent;
   descriptionInput.value = profileDescription.textContent;
+  resetValidation(editForm, [nameInput, descriptionInput], settings);
   openModal(editModal);
 });
 
@@ -114,16 +129,16 @@ editForm.addEventListener("submit", handleEditFormSubmit);
 
 function handleNewPostFormSubmit(evt) {
   evt.preventDefault();
-  console.log(newPostLink.value);
-  console.log(newPostCaption.value);
   const inputValues = {
     name: newPostCaption.value,
     link: newPostLink.value,
   };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+  evt.target.reset();
+  disableButton(newSubmitBtn, settings);
   closeModal(newPostModal);
-  newPostFormEl.reset();
+  
 }
 
 newPostFormEl.addEventListener("submit", handleNewPostFormSubmit);
@@ -132,3 +147,4 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
