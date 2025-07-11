@@ -81,6 +81,7 @@ const editAvatarBtn = document.querySelector(".profile__edit-btn_avatar");
 const newAvatarModal = document.querySelector("#edit-avatar-modal");
 const newAvatarLink = newAvatarModal.querySelector("#avatar-link-input");
 const newAvatarFormEl = document.forms["edit-profile-avatar-form"];
+const newAvatarSubmitbtn = newAvatarModal.querySelector(".modal__btn_save");
 
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
@@ -159,22 +160,19 @@ function handleEditAvatar(evt) {
       .catch(console.error)
       .finally(() => {
         setButtonText(evt.submitter, "Save");
+        newAvatarFormEl.reset();
+        disableButton(newAvatarSubmitbtn, settings);
       });
   }, 2000);
-  // api.editAvatar({ avatar: newAvatarLink.value }).then((res) => {
-  //   avatarImage.src = res.avatar;
-  // });
 }
 
 newAvatarFormEl.addEventListener("submit", handleEditAvatar);
 
 function handleCardLike(evt, data) {
   const isLiked = evt.target.classList.contains("card__like-btn_active");
-  console.log(isLiked);
   api
     .toggleLike(data._id, isLiked)
     .then((res) => {
-      console.log(res);
       evt.target.classList.toggle("card__like-btn_active");
     })
     .catch(console.error);
